@@ -1,7 +1,7 @@
 # Tic-Tac-Toe
 ## 2 independed instances
-### Used technologies:
-React + TS + i18next + API +
+### Used:
+React/TS/SCSS/i18next/API/React-router
 
 ### Iteration 1:
 Design layout
