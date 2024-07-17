@@ -1,0 +1,213 @@
+//Colors
+$background-theme-color: #242424;
+//Sizes
+$shadow: 2px 2px 2px black;
+$grid-squares-size: 150px 150px 150px;
+$table-border: 1px solid white;
+
+#root {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+body {
+	background-color: $background-theme-color;
+}
+
+* {
+	box-sizing: border-box;
+	text-shadow: $shadow;
+}
+
+.profileForm {
+	max-width: 400px;
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#playerOneInput, #playerTwoInput {
+	width: 300px;
+}
+
+.profileForm input {
+	margin: 10px;
+	padding: 10px;
+	background-color: antiquewhite;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 5px;
+	color: black;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.profileForm h2 {
+	font-size: 50px;
+}
+
+.formAnnotation {
+	color: rgb(207, 45, 45);
+	font-size: 12px;
+}
+
+.annotationContainer {
+	height: 50px;
+}
+
+.playButtonContainer {
+	text-align: center;
+	height: 50px;
+}
+
+.boardContainer {
+	display: grid;
+	grid-template-columns: $grid-squares-size;
+	grid-template-rows: $grid-squares-size;
+	justify-content: center;
+}
+
+.square {
+	border: $table-border;
+	font-size: 90px;
+	font-weight: bold;
+}
+
+.square:hover {
+	cursor: pointer;
+}
+
+.nextTurnHeading {
+	text-align: center;
+}
+
+.gameContainer {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	width: fit-content;
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.board, .scoreBoard {
+	padding: 50px;
+}
+
+th, td, tr {
+	padding: 20px;
+}
+
+th {
+	background-color: rgb(84, 58, 172);
+	border: $table-border;
+}
+
+.scoreTable, td {
+	border-collapse: collapse;
+	border: $table-border;
+}
+
+.role {
+	font-weight: bold;
+	background-color: rgba(84, 58, 172, 0.2);
+}
+
+.delete {
+	color: rgb(203, 66, 66);
+	transition: 200ms;
+}
+
+.delete:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.select {
+	color: rgb(112, 162, 37);
+	transition: 200ms;
+}
+
+.select:hover {
+	cursor: pointer;
+	color: greenyellow;
+}
+
+.profilePicture {
+	border-radius: 100px;
+}
+
+.dropdown {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	margin: 20px;
+}
+
+.menuRouteContainer {
+	position: relative;
+	top: 0;
+	right: 0;
+	margin: 20px;
+}
+.menuRouteButton {
+	background-color: cornflowerblue;
+}
+
+.languageContent {
+	display: none;
+	position: absolute;
+}
+
+.languageContent > button {
+	border-radius: 0;
+	width: 120px;
+}
+
+.show {
+	display: block;
+}
+
+.dropdownButton {
+	width: 120px;
+	text-align: center;
+	background-color: rgb(60, 54, 170);
+}
+
+.addPlayerForm {
+	background-color: rgb(60, 54, 170);
+	text-align: center;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+#addPlayerInput {
+	padding: 5px;
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+#addPlayerButton {
+	margin-left: 5px;
+}
+
+.instanceButton1, .instanceButton2 {
+	padding: 20px;
+	margin: 5px;
+	color: black;
+	text-shadow: none;
+}
+
+.instanceButton1 {
+	background-color: aqua;
+}
+
+.instanceButton2 {
+	background-color: aquamarine;
+}
